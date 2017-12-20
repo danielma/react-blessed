@@ -26,9 +26,7 @@ var eventListener = function eventListener(node, event) {
   */
 
   if (typeof handler === 'function') {
-    args[0] = node;
-
-    handler.apply(undefined, args);
+    handler.apply(undefined, [node].concat(args));
   }
 };
 
