@@ -4,7 +4,7 @@ import type { HostConfig, Reconciler } from 'react-fiber-types';
 const {
   debounce
 } = require('lodash');
-const blessed = require('blessed');
+const blessed = require('neo-blessed');
 const ReactFiberReconciler : (
   hostConfig: HostConfig<*, *, *, *, *, *, *, *>
 ) => Reconciler<*, *, *> = require('react-reconciler');
